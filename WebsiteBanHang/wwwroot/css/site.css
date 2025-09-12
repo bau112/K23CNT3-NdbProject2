@@ -1,22 +1,200 @@
-html {
-  font-size: 14px;
+﻿body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    padding-bottom: 110px;
+    background: #f5f5f5;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.navbar {
+    background-color: #ff6600 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.navbar-brand img {
+    display: block;
+    max-height: 50px;
+    object-fit: contain;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.navbar-nav .nav-item {
+    margin: 0 4px;
 }
 
-body {
-  margin-bottom: 60px;
+.navbar-nav .nav-link {
+    display: block;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.2s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        background-color: #fff;
+        color: #ff6600 !important;
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+        text-decoration: none;
+    }
+
+h4.mb-4 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+    .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+    }
+
+.card-img-wrapper {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 12px;
+}
+
+    .card-img-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+.card-title {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.price {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .price .gia-cu {
+        text-decoration: line-through;
+        color: #888;
+        font-weight: 500;
+    }
+
+    .price .gia-moi {
+        color: #ff6600;
+        font-weight: 700;
+        font-size: 1.05rem;
+    }
+
+.btn-custom {
+    background: linear-gradient(45deg, #ff6600, #ff8533);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+    .btn-custom:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        text-decoration: none;
+    }
+
+    .btn-custom.btn-secondary {
+        background: linear-gradient(45deg, #28a745, #5cd65c);
+    }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 6px 0;
+    z-index: 1100;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
+}
+
+    .bottom-nav .nav-item {
+        flex: 1;
+        color: #222;
+        font-size: 0.82rem;
+        text-decoration: none;
+        padding: 4px 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+        .bottom-nav .nav-item i {
+            font-size: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .bottom-nav .nav-item span {
+            font-size: 0.78rem;
+        }
+
+        .bottom-nav .nav-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            color: #ff6600;
+            background-color: rgba(255,102,0,0.1);
+        }
+
+            .bottom-nav .nav-item:hover i {
+                transform: scale(1.2);
+            }
+
+        .bottom-nav .nav-item.active {
+            color: #ff6600;
+            font-weight: 700;
+            background-color: rgba(255,102,0,0.1);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+            .bottom-nav .nav-item.active i {
+                color: #ff6600;
+                transform: scale(1.2);
+            }
+
+@media (max-width: 768px) {
+    .card-img-wrapper {
+        height: 160px;
+    }
 }

@@ -1,8 +1,45 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var products = new[] {
+        new { Ten="iPhone 15 Pro Max", Gia=32990000, Img="~/images/ip15.jfif" },
+        new { Ten="iPhone 14 Pro", Gia=27990000, Img="~/images/ip14.jfif" },
+        new { Ten="iPhone 13", Gia=19990000, Img="~/images/ip13.jfif" },
+        new { Ten="iPhone 11", Gia=15990000, Img="~/images/ip11.jfif" },
+        new { Ten="Samsung Galaxy S24 Ultra", Gia=28990000, Img="~/images/sss24.jfif" },
+        new { Ten="Samsung Galaxy S23", Gia=23990000, Img="~/images/sss23.jfif" },
+        new { Ten="Samsung Galaxy S22", Gia=19990000, Img="~/images/sss22.jfif" },
+        new { Ten="Samsung Galaxy S21", Gia=17990000, Img="~/images/sss21.jfif" }
+    };
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h4 class="mb-4">Sản phẩm nổi bật</h4>
+
+<div class="row">
+    @foreach (var p in products)
+    {
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+            <div class="card product-card h-100">
+                <div class="card-img-wrapper">
+                    <img src="@Url.Content(p.Img)" alt="@p.Ten" />
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title mb-2">@p.Ten</h6>
+                    <p class="price mb-2">
+                        <span class="gia-cu">@String.Format("{0:N0} đ", p.Gia * 1.1)</span>
+                        <span class="gia-moi">@String.Format("{0:N0} đ", p.Gia)</span>
+                    </p>
+                    <div class="mt-auto d-flex gap-2">
+                        <a href="#" class="btn btn-custom">
+                            <i class="bi bi-bag-check-fill"></i> Mua ngay
+                        </a>
+                        <a href="#" class="btn btn-custom btn-secondary">
+                            <i class="bi bi-credit-card-2-front-fill"></i> Trả góp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 </div>
