@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\airpodspro.jpg",
+      "PackagePath": "staticwebassets\\images\\airpodspro.jpg"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\baseus.png",
+      "PackagePath": "staticwebassets\\images\\baseus.png"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\dellxps.jpg",
+      "PackagePath": "staticwebassets\\images\\dellxps.jpg"
+    },
+    {
       "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\ip11.jfif",
       "PackagePath": "staticwebassets\\images\\ip11.jfif"
     },
@@ -35,6 +47,26 @@
     {
       "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\ipx.jfif",
       "PackagePath": "staticwebassets\\images\\ipx.jfif"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\macbook.webp",
+      "PackagePath": "staticwebassets\\images\\macbook.webp"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\poster1.jpg",
+      "PackagePath": "staticwebassets\\images\\poster1.jpg"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\poster2.jpg",
+      "PackagePath": "staticwebassets\\images\\poster2.jpg"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\poster3.jpg",
+      "PackagePath": "staticwebassets\\images\\poster3.jpg"
+    },
+    {
+      "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\qcadr.jpg",
+      "PackagePath": "staticwebassets\\images\\qcadr.jpg"
     },
     {
       "Id": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\images\\sss21.jfif",

@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\product\\repair.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\product\\repair.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\product\\accessory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\product\\accessory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\product\\laptop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\product\\laptop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\product\\phone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\product\\phone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|c:\\project 2\\k23cnt3-ndbproject2\\websitebanhang\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9ECF9A1-4E8F-4AE7-A80D-6A37FE949197}|WebsiteBanHang.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,25 +58,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Repair.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Repair.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Repair.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Repair.cshtml*",
+              "RelativeToolTip": "Views\\Product\\Repair.cshtml*",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T12:42:51.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T07:27:55.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-12T18:21:34.414Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-09-12T18:48:51.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "Controllers\\ProductController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:03:55.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T08:10:21.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T07:28:02.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Laptop.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Laptop.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Laptop.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Laptop.cshtml",
+              "RelativeToolTip": "Views\\Product\\Laptop.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvx4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T08:07:32.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T08:08:37.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Accessory.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Accessory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Accessory.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Accessory.cshtml",
+              "RelativeToolTip": "Views\\Product\\Accessory.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvx4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T08:07:57.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Phone.cshtml",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Phone.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Phone.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Phone.cshtml",
+              "RelativeToolTip": "Views\\Product\\Phone.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvx4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T08:06:53.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -65,55 +205,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAuwMgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-12T18:48:51.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-12T17:15:33.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABFAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-12T16:54:22.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\project 2\\K23CNT3-NdbProject2\\WebsiteBanHang\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAwwFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-12T16:51:30.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T07:22:26.057Z"
             }
           ]
         }

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Laptop";
+    var products = ViewBag.Products;
+}
+
+<div class="container mt-4">
+    <h4 class="mb-4">Laptop</h4>
+    <div class="row">
+        @foreach (var p in products)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                    <div class="card-img-wrapper">
+                        <img src="@p.Image" class="card-img-top" alt="@p.Name">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@p.Name</h5>
+                        <p class="price">
+                            <span class="gia-cu">@p.OldPrice</span>
+                            <span class="gia-moi">@p.NewPrice</span>
+                        </p>
+                        <a href="/Product/Details/@p.Id" class="btn btn-custom">
+                            <i class="fas fa-info-circle"></i> Chi tiết sản phẩm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

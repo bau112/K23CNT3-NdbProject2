@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    var product = ViewBag.Product;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Video thay cho ảnh -->
+        <div class="col-md-5">
+            <div class="ratio ratio-4x3">
+                <iframe src="@product.Video" title="YouTube video" allowfullscreen class="rounded shadow-sm"></iframe>
+            </div>
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-7">
+            <h2>@product.Name</h2>
+            <p class="price">
+                <span class="gia-cu">@product.OldPrice</span>
+                <span class="gia-moi">@product.NewPrice</span>
+            </p>
+            <p>@product.Description</p>
+
+            <a href="@Url.Action("Phone","Product")" class="btn btn-secondary">
+                ← Quay lại danh sách
+            </a>
+        </div>
+    </div>
+</div>
