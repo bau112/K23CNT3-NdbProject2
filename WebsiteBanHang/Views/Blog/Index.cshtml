@@ -1,0 +1,21 @@
+﻿@model List<WebsiteBanHang.Models.BlogPost>
+@{
+    ViewData["Title"] = "Tin tức";
+    Layout = "_Layout";
+}
+<h3>Tin tức</h3>
+<div class="row">
+    @foreach (var p in Model)
+    {
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <img src="~/images/@p.Image" class="card-img-top" style="height:180px;object-fit:cover" />
+                <div class="card-body">
+                    <h5>@p.Title</h5>
+                    <p>@p.Summary</p>
+                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@p.Id" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

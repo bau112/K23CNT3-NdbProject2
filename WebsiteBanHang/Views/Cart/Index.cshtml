@@ -1,0 +1,52 @@
+﻿@model List<WebsiteBanHang.Models.CartItem>
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    Layout = "_Layout";
+}
+<h3>Giỏ hàng</h3>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Giỏ hàng hiện đang trống.</div>
+}
+else
+{
+    <table class="table">
+        <thead><tr><th>Sản phẩm</th><th>Giá</th><th>Số lượng</th><th>Thành tiền</th><th></th></tr></thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/images/@item.Image" style="width:80px;height:60px;object-fit:cover" />
+                        <div>@item.Name <br /><small>@item.Color @item.Memory</small></div>
+                    </td>
+                    <td>@String.Format("{0:N0}", item.Price) đ</td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="Update" method="post" class="d-flex">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <input type="number" name="qty" value="@item.Quantity" min="1" class="form-control me-2" style="width:100px" />
+                            <input type="hidden" name="color" value="@item.Color" />
+                            <input type="hidden" name="memory" value="@item.Memory" />
+                            <button class="btn btn-sm btn-primary">Cập nhật</button>
+                        </form>
+                    </td>
+                    <td>@String.Format("{0:N0}", item.Price * item.Quantity) đ</td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="Remove" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <input type="hidden" name="color" value="@item.Color" />
+                            <input type="hidden" name="memory" value="@item.Memory" />
+                            <button class="btn btn-sm btn-danger">Xóa</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-end">
+        <h4>Tổng: @String.Format("{0:N0}", Model.Sum(i => i.Price * i.Quantity)) đ</h4>
+        <a asp-controller="Checkout" asp-action="Index" class="btn btn-success">Thanh toán</a>
+    </div>
+}

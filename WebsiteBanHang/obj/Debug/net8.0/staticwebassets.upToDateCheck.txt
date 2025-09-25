@@ -2,6 +2,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\airpodspro.jpg
 wwwroot\images\baseus.png
+wwwroot\images\chuot.jpeg
 wwwroot\images\dellxps.jpg
 wwwroot\images\ip11.jfif
 wwwroot\images\ip13.jfif

@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Account\" />
     <Folder Include="Views\Brands\" />
     <Folder Include="Views\Cartltem\" />
     <Folder Include="Views\Categories\" />
