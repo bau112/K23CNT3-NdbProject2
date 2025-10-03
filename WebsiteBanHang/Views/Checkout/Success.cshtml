@@ -1,9 +1,0 @@
-﻿@model WebsiteBanHang.Models.Order
-@{
-    ViewData["Title"] = "Đặt hàng thành công";
-    Layout = "_Layout";
-}
-<h3>Đặt hàng thành công</h3>
-<p>Mã đơn hàng: <strong>@Model.OrderId</strong></p>
-<p>Tổng: <strong>@String.Format("{0:N0}", Model.Total) đ</strong></p>
-<p>Chúng tôi sẽ liên hệ với bạn qua SĐT @Model.Phone để xác nhận.</p>

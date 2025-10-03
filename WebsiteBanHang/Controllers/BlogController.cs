@@ -5,10 +5,7 @@ namespace WebsiteBanHang.Controllers
 {
     public class BlogController : Controller
     {
-        public IActionResult Index()
-        {
-            return View(FakeData.BlogPosts);
-        }
+        public IActionResult Index() => View(FakeData.BlogPosts);
 
         public IActionResult Details(int id)
         {

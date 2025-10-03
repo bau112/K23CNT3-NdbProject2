@@ -32,38 +32,14 @@ namespace WebsiteBanHang.Controllers
                     Image = p.Image,
                     Price = p.NewPrice,
                     Quantity = qty,
-                    Color = color,
-                    Memory = memory
+                    Color = color ?? string.Empty,
+                    Memory = memory ?? string.Empty
                 });
             }
             else
             {
                 item.Quantity += qty;
             }
-            HttpContext.Session.SetObject(CART_KEY, cart);
-            return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public IActionResult Update(int productId, int qty, string color = "", string memory = "")
-        {
-            var cart = HttpContext.Session.GetObject<List<CartItem>>(CART_KEY) ?? new List<CartItem>();
-            var item = cart.FirstOrDefault(x => x.ProductId == productId && x.Color == color && x.Memory == memory);
-            if (item != null)
-            {
-                if (qty <= 0) cart.Remove(item);
-                else item.Quantity = qty;
-            }
-            HttpContext.Session.SetObject(CART_KEY, cart);
-            return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public IActionResult Remove(int productId, string color = "", string memory = "")
-        {
-            var cart = HttpContext.Session.GetObject<List<CartItem>>(CART_KEY) ?? new List<CartItem>();
-            var item = cart.FirstOrDefault(x => x.ProductId == productId && x.Color == color && x.Memory == memory);
-            if (item != null) cart.Remove(item);
             HttpContext.Session.SetObject(CART_KEY, cart);
             return RedirectToAction("Index");
         }

@@ -5,15 +5,7 @@ namespace WebsiteBanHang.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult Index()
-        {
-            return View(FakeData.Products);
-        }
-
-        public IActionResult Phone() => View("Index", FakeData.Products.Where(p => p.Category == "Phone").ToList());
-        public IActionResult Laptop() => View("Index", FakeData.Products.Where(p => p.Category == "Laptop").ToList());
-        public IActionResult Accessory() => View("Index", FakeData.Products.Where(p => p.Category == "Accessory").ToList());
-        public IActionResult Repair() => View("Index", FakeData.Products.Where(p => p.Category == "Repair").ToList());
+        public IActionResult Index() => View(FakeData.Products);
 
         public IActionResult Details(int id)
         {
@@ -21,5 +13,8 @@ namespace WebsiteBanHang.Controllers
             if (p == null) return NotFound();
             return View(p);
         }
+
+        public IActionResult Phone() => View("Index", FakeData.Products.Where(p => p.Category == "Phone").ToList());
+        public IActionResult Laptop() => View("Index", FakeData.Products.Where(p => p.Category == "Laptop").ToList());
     }
 }

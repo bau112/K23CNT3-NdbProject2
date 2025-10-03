@@ -1,90 +1,99 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebsiteBanHang</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <!-- Top navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="/">WebsiteBanHang</a>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-orange">
+            <div class="container-fluid d-flex align-items-center">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Logo -->
+                <a class="navbar-brand text-white fw-bold me-4" asp-controller="Home" asp-action="Index">
+                    WebsiteBanHang
+                </a>
 
-            <div class="collapse navbar-collapse" id="navMain">
-                <!-- category icons (desktop) -->
-                <ul class="navbar-nav mx-auto icon-menu">
-                    <li class="nav-item"><a class="nav-link" asp-controller="Product" asp-action="Phone"><i class="fas fa-mobile-alt"></i><span>Điện thoại</span></a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Product" asp-action="Laptop"><i class="fas fa-laptop"></i><span>Laptop</span></a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Product" asp-action="Accessory"><i class="fas fa-headphones"></i><span>Phụ kiện</span></a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Product" asp-action="Repair"><i class="fas fa-tools"></i><span>Sửa chữa</span></a></li>
+                <!-- Menu icon + text -->
+                <ul class="navbar-nav me-auto d-flex flex-row align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Cart" asp-action="Index">
-                            <i class="fas fa-shopping-cart"></i><br />Giỏ hàng
+                        <a class="nav-link text-white" asp-controller="Home" asp-action="Index">
+                            <i class="fa fa-house"></i>
+                            <div>Trang chủ</div>
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Product" asp-action="Phone">
+                            <i class="fa fa-mobile-screen-button"></i>
+                            <div>Điện thoại</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Product" asp-action="Laptop">
+                            <i class="fa fa-laptop-code"></i>
+                            <div>Laptop</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Product" asp-action="Accessory">
+                            <i class="fa fa-headphones"></i>
+                            <div>Phụ kiện</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Service" asp-action="Repair">
+                            <i class="fa fa-screwdriver-wrench"></i>
+                            <div>Sửa chữa</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Blog" asp-action="Index">
+                            <i class="fa fa-newspaper"></i>
+                            <div>Tin tức</div>
+                        </a>
+                    </li>
                 </ul>
 
-                <!-- search -->
-                <form class="d-flex ms-3 me-2 search-form" role="search" method="get" action="/Product/Index">
-                    <input class="form-control" name="q" placeholder="Tìm kiếm sản phẩm..." />
-                    <button class="btn btn-light ms-2" type="submit"><i class="fas fa-search"></i></button>
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex search-form mx-3 flex-grow-1" role="search" method="get" action="/Product/Index">
+                    <input name="q" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button class="btn btn-custom" type="submit"><i class="fa fa-search"></i></button>
                 </form>
 
-                <!-- account -->
+                <!-- Tài khoản -->
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex flex-column align-items-center" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-user"></i>
-                            <span>Tài khoản</span>
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="acctDrop"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                            <div>Tài khoản</div>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="/Account/Login">Đăng nhập</a></li>
-                            <li><a class="dropdown-item" href="/Account/Register">Đăng ký</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="acctDrop">
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Register">Đăng ký</a></li>
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Banner carousel -->
-    <div class="container mt-3">
-        <div id="mainBanner" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="~/images/banner1.jpg" class="d-block w-100 banner-img" alt="banner1" />
-                </div>
-                <div class="carousel-item">
-                    <img src="~/images/banner2.jpg" class="d-block w-100 banner-img" alt="banner2" />
-                </div>
-                <div class="carousel-item">
-                    <img src="~/images/banner3.jpg" class="d-block w-100 banner-img" alt="banner3" />
-                </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
     <main class="container mt-4">
         @RenderBody()
     </main>
 
-    <!-- bottom nav (mobile) -->
-    <div class="bottom-nav d-lg-none">
-        <a class="nav-item" href="/"><i class="fas fa-home"></i><span>Trang chủ</span></a>
-        <a class="nav-item" href="/Product/Phone"><i class="fas fa-mobile-alt"></i><span>Điện thoại</span></a>
-        <a class="nav-item" href="/Product/Laptop"><i class="fas fa-laptop"></i><span>Laptop</span></a>
-        <a class="nav-item" href="/Product/Accessory"><i class="fas fa-headphones"></i><span>Phụ kiện</span></a>
-        <a class="nav-item" href="/Product/Repair"><i class="fas fa-tools"></i><span>Sửa chữa</span></a>
-    </div>
+    <footer class="bg-light text-center py-3 mt-5">
+        <p class="mb-0">&copy; @DateTime.Now.Year - WebsiteBanHang</p>
+    </footer>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     @RenderSection("Scripts", required: false)

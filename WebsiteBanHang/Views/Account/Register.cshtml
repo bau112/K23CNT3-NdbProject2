@@ -1,0 +1,16 @@
+﻿@model WebsiteBanHang.Models.UserModel
+@{
+    ViewData["Title"] = "Đăng ký";
+    Layout = "_Layout";
+}
+<h3>Đăng ký</h3>
+<form method="post">
+    <div class="mb-3"><input name="Username" class="form-control" placeholder="Tên đăng nhập" required /></div>
+    <div class="mb-3"><input name="Password" type="password" class="form-control" placeholder="Mật khẩu" required /></div>
+    <div class="mb-3"><input name="FullName" class="form-control" placeholder="Họ và tên" /></div>
+    <button class="btn btn-success">Đăng ký</button>
+    @if (ViewBag.Error != null)
+    {
+        <div class="text-danger mt-2">@ViewBag.Error</div>
+    }
+</form>

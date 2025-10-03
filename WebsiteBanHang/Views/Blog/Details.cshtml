@@ -1,8 +1,7 @@
 ﻿@model WebsiteBanHang.Models.BlogPost
-@{
-    ViewData["Title"] = Model.Title; Layout = "_Layout";
-}
-<h3>@Model.Title</h3>
-<img src="~/images/@Model.Image" class="img-fluid mb-3" />
-<p class="text-muted">@Model.PublishedAt.ToString("dd/MM/yyyy")</p>
-<div>@Html.Raw(Model.Content)</div>
+<div class="container mt-4">
+    <h2>@Model.Title</h2>
+    <img src="~/images/@Model.Image" class="img-fluid mb-3" />
+    <p>@Model.Content</p>
+    <small><i>Ngày đăng: @Model.CreatedAt:dd/MM/yyyy</i></small>
+</div>

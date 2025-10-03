@@ -1,47 +1,30 @@
-﻿<ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Product" asp-action="Phone">
-            <i class="fas fa-mobile-alt"></i><br />Điện thoại
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Product" asp-action="Laptop">
-            <i class="fas fa-laptop"></i><br />Laptop
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Product" asp-action="Accessory">
-            <i class="fas fa-headphones"></i><br />Phụ kiện
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Product" asp-action="Repair">
-            <i class="fas fa-tools"></i><br />Sửa chữa
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Cart" asp-action="Index">
-            <i class="fas fa-shopping-cart"></i><br />Giỏ hàng
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Blog" asp-action="Index">
-            <i class="fas fa-newspaper"></i><br />Tin tức
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Contact" asp-action="Index">
-            <i class="fas fa-envelope"></i><br />Liên hệ
-        </a>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            <i class="fas fa-user"></i><br />Tài khoản
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Đăng nhập</a></li>
-            <li><a class="dropdown-item" asp-controller="Account" asp-action="Register">Đăng ký</a></li>
-            <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
-        </ul>
-    </li>
-</ul>
+﻿@model WebsiteBanHang.Models.Product
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/images/@Model.Image" class="img-fluid ratio-16x9" alt="@Model.Name" />
+        </div>
+        <div class="col-md-6">
+            <h2>@Model.Name</h2>
+            <p>
+                <span class="gia-cu">@Model.Price.ToString("N0")đ</span>
+                <span class="gia-moi">@Model.NewPrice.ToString("N0")đ</span>
+            </p>
+            <p>@Model.Description</p>
+
+            <form asp-controller="Cart" asp-action="Add" method="post">
+                <input type="hidden" name="productId" value="@Model.Id" />
+                <div class="mb-2">
+                    <label>Số lượng:</label>
+                    <input type="number" name="qty" value="1" min="1" class="form-control w-25" />
+                </div>
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
