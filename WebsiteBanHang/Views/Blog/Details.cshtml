@@ -1,7 +1,13 @@
 ﻿@model WebsiteBanHang.Models.BlogPost
+
+@{
+    ViewData["Title"] = @Model.Title;
+}
+
 <div class="container mt-4">
     <h2>@Model.Title</h2>
-    <img src="~/images/@Model.Image" class="img-fluid mb-3" />
+    <p class="text-muted">@Model.CreatedAt.ToString("10/10/2025")</p>
+    <img src="~/images/@Model.Image" class="img-fluid mb-4 rounded shadow" alt="@Model.Title">
     <p>@Model.Content</p>
-    <small><i>Ngày đăng: @Model.CreatedAt:dd/MM/yyyy</i></small>
+    <a href="/Blog/Index" class="btn btn-secondary mt-3">← Quay lại</a>
 </div>

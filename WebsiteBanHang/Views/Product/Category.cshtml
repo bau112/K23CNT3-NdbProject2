@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebsiteBanHang.Models.Product>
+@{
+    ViewData["Title"] = ViewBag.Category;
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4>@ViewBag.Category</h4>
+        <form method="get" class="d-flex">
+            <select name="sortOrder" class="form-select" onchange="this.form.submit()">
+                <option value="">- Sắp xếp -</option>
+                <option value="price_asc" selected="@(ViewBag.SortOrder == "price_asc")">Giá thấp → cao</option>
+                <option value="price_desc" selected="@(ViewBag.SortOrder == "price_desc")">Giá cao → thấp</option>
+            </select>
+        </form>
+    </div>
+
+    @if (Model == null || !Model.Any())
+    {
+        <p>Không có sản phẩm nào trong danh mục @ViewBag.Category.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image">
+                            <img src="~/images/@product.Image" class="card-img-top" alt="@product.Name" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="price">
+                                <span class="gia-cu">@product.Price.ToString("N0") đ</span>
+                                <span class="gia-moi">@product.NewPrice.ToString("N0") đ</span>
+                            </p>
+                            <a asp-controller="Product"
+                               asp-action="Details"
+                               asp-route-id="@product.Id"
+                               asp-route-returnUrl="@Context.Request.Path"
+                               class="btn btn-custom">
+								<i class="fas fa-info-circle"></i> Chi tiết sản phẩm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

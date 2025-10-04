@@ -12,9 +12,8 @@ namespace WebsiteBanHang.Helpers
 
         public static T? GetObject<T>(this ISession session, string key)
         {
-            var str = session.GetString(key);
-            if (string.IsNullOrEmpty(str)) return default;
-            return JsonSerializer.Deserialize<T>(str);
+            var value = session.GetString(key);
+            return value == null ? default : JsonSerializer.Deserialize<T>(value);
         }
     }
 }

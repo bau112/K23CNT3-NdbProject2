@@ -1,16 +1,22 @@
 ﻿@model IEnumerable<WebsiteBanHang.Models.BlogPost>
+
+@{
+    ViewData["Title"] = "Tin tức";
+}
+
 <div class="container mt-4">
-    <h4 class="mb-4">Tin tức công nghệ</h4>
+    <h2 class="mb-4">Tin tức công nghệ</h2>
     <div class="row">
         @foreach (var post in Model)
         {
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <img src="~/images/@post.Image" class="card-img-top" alt="@post.Title" />
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="~/images/@post.Image" class="card-img-top" alt="@post.Title">
                     <div class="card-body">
                         <h5 class="card-title">@post.Title</h5>
-                        <p>@post.Content.Substring(0, Math.Min(100, post.Content.Length))...</p>
-                        <a href="/Blog/Details/@post.Id" class="btn btn-primary">Đọc tiếp</a>
+                        <p class="text-muted small">@post.CreatedAt.ToString("10/10/2025")</p>
+                        <p class="card-text">@post.Content.Substring(0, Math.Min(80, post.Content.Length))...</p>
+                        <a href="/Blog/Details/@post.Id" class="btn btn-custom">Xem chi tiết</a>
                     </div>
                 </div>
             </div>

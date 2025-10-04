@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebsiteBanHang.Helpers;
 using WebsiteBanHang.Models;
 using WebsiteBanHang.Services;
+using WebsiteBanHang.Helpers;
 
 namespace WebsiteBanHang.Controllers
 {
@@ -15,31 +15,58 @@ namespace WebsiteBanHang.Controllers
             return View(cart);
         }
 
-        [HttpPost]
-        public IActionResult Add(int productId, int qty = 1, string color = "", string memory = "")
+        public IActionResult Add(int id)
         {
-            var p = FakeData.Products.FirstOrDefault(x => x.Id == productId);
-            if (p == null) return NotFound();
+            var product = FakeData.Products.FirstOrDefault(p => p.Id == id);
+            if (product == null) return NotFound();
 
             var cart = HttpContext.Session.GetObject<List<CartItem>>(CART_KEY) ?? new List<CartItem>();
-            var item = cart.FirstOrDefault(x => x.ProductId == productId && x.Color == color && x.Memory == memory);
+
+            var item = cart.FirstOrDefault(c => c.ProductId == id);
             if (item == null)
             {
                 cart.Add(new CartItem
                 {
-                    ProductId = productId,
-                    Name = p.Name,
-                    Image = p.Image,
-                    Price = p.NewPrice,
-                    Quantity = qty,
-                    Color = color ?? string.Empty,
-                    Memory = memory ?? string.Empty
+                    ProductId = product.Id,
+                    Name = product.Name,
+                    Image = product.Image,
+                    Price = product.NewPrice,
+                    Quantity = 1
                 });
             }
             else
             {
-                item.Quantity += qty;
+                item.Quantity++;
             }
+
+            HttpContext.Session.SetObject(CART_KEY, cart);
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult UpdateQuantity(int id, int quantity)
+        {
+            var cart = HttpContext.Session.GetObject<List<CartItem>>(CART_KEY) ?? new List<CartItem>();
+            var item = cart.FirstOrDefault(c => c.ProductId == id);
+
+            if (item != null)
+            {
+                if (quantity > 0)
+                    item.Quantity = quantity;
+                else
+                    cart.Remove(item);
+
+                HttpContext.Session.SetObject(CART_KEY, cart);
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult Remove(int id)
+        {
+            var cart = HttpContext.Session.GetObject<List<CartItem>>(CART_KEY) ?? new List<CartItem>();
+            cart.RemoveAll(c => c.ProductId == id);
             HttpContext.Session.SetObject(CART_KEY, cart);
             return RedirectToAction("Index");
         }

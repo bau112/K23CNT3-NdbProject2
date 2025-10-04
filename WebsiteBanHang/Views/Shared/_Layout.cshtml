@@ -17,64 +17,67 @@
         <nav class="navbar navbar-expand-sm bg-orange">
             <div class="container-fluid d-flex align-items-center">
 
-                <!-- Logo -->
                 <a class="navbar-brand text-white fw-bold me-4" asp-controller="Home" asp-action="Index">
                     WebsiteBanHang
                 </a>
 
-                <!-- Menu icon + text -->
                 <ul class="navbar-nav me-auto d-flex flex-row align-items-center">
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Home" asp-action="Index">
                             <i class="fa fa-house"></i>
-                            <div>Trang chủ</div>
+                            <span class="menu-text">Trang chủ</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Product" asp-action="Phone">
                             <i class="fa fa-mobile-screen-button"></i>
-                            <div>Điện thoại</div>
+                            <span class="menu-text">Điện thoại</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Product" asp-action="Laptop">
                             <i class="fa fa-laptop-code"></i>
-                            <div>Laptop</div>
+                            <span class="menu-text">Laptop</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Product" asp-action="Accessory">
                             <i class="fa fa-headphones"></i>
-                            <div>Phụ kiện</div>
+                            <span class="menu-text">Phụ kiện</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Service" asp-action="Repair">
                             <i class="fa fa-screwdriver-wrench"></i>
-                            <div>Sửa chữa</div>
+                            <span class="menu-text">Sửa chữa</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Blog" asp-action="Index">
                             <i class="fa fa-newspaper"></i>
-                            <div>Tin tức</div>
+                            <span class="menu-text">Tin tức</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Cart" asp-action="Index">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="menu-text">Giỏ hàng</span>
                         </a>
                     </li>
                 </ul>
 
-                <!-- Thanh tìm kiếm -->
-                <form class="d-flex search-form mx-3 flex-grow-1" role="search" method="get" action="/Product/Index">
+                <form class="d-flex search-form mx-3" role="search" method="get" action="/Product/Index">
                     <input name="q" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." />
-                    <button class="btn btn-custom" type="submit"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
                 </form>
 
-                <!-- Tài khoản -->
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="acctDrop"
                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-user"></i>
-                            <div>Tài khoản</div>
+                            <span class="menu-text">Tài khoản</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="acctDrop">
                             <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Đăng nhập</a></li>

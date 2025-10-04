@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,8 +52,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Product/Accessory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBY2Nlc3NvcnkuY3NodG1s
+[C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Product/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Product/Details.cshtml]
@@ -60,16 +64,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Product/Laptop.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMYXB0b3AuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Product/Phone.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQaG9uZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Product/Repair.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxSZXBhaXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Service/Repair.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxSZXBhaXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/project 2/K23CNT3-NdbProject2/WebsiteBanHang/Views/Shared/Error.cshtml]
